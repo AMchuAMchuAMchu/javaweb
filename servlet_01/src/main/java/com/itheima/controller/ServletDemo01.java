@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * CreateTime ==> 2022-11-04 10:59:13
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@WebServlet(urlPatterns = "/servlet01",loadOnStartup = -1)
+@WebServlet(urlPatterns = "/servlet01",loadOnStartup = 0)
 public class ServletDemo01 implements Servlet {
 
 
