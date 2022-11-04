@@ -40,6 +40,6 @@ public class ServletDemo01 implements Servlet {
 
     @Override
     public void destroy() {
-
+        System.out.println("destroy..."+LocalDateTime.now());
     }
 }
