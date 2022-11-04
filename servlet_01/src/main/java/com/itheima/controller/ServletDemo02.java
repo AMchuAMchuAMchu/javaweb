@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.time.LocalTime;
 
+
 /**
  * Description ==> TODO
  * BelongsProject ==> javaweb
@@ -16,8 +17,8 @@ import java.time.LocalTime;
  * CreateTime ==> 2022-11-04 11:25:18
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-//@WebServlet("/servlet02/*")
-@WebServlet("/servlet02/*.do")
+@WebServlet("/servlet02")
+//@WebServlet("*.do")
 public class ServletDemo02 extends HttpServlet {
 
     @Override
