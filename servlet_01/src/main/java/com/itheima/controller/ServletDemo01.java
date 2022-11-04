@@ -17,15 +17,17 @@ import java.time.LocalDateTime;
 @WebServlet(urlPatterns = "/servlet01",loadOnStartup = 0)
 public class ServletDemo01 implements Servlet {
 
+    private ServletConfig servletConfig;
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
+        this.servletConfig = servletConfig;
         System.out.println("init..."+LocalDateTime.now());
     }
 
     @Override
     public ServletConfig getServletConfig() {
-        return null;
+        return servletConfig;
     }
 
     @Override
@@ -35,7 +37,7 @@ public class ServletDemo01 implements Servlet {
 
     @Override
     public String getServletInfo() {
-        return null;
+        return "";
     }
 
     @Override
