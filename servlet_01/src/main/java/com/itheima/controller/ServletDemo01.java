@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * Description ==> TODO
@@ -29,7 +30,7 @@ public class ServletDemo01 implements Servlet {
 
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println("service..."+ LocalDate.now());
+        System.out.println("service..."+ LocalDateTime.now());
     }
 
     @Override
