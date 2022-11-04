@@ -20,7 +20,7 @@ public class ServletDemo01 implements Servlet {
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        System.out.println("init..."+LocalDateTime.now());
     }
 
     @Override
