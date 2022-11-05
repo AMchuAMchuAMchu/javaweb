@@ -6,7 +6,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.Enumeration;
 
-@WebServlet("reqrespdemo02")
+@WebServlet("/reqrespdemo02")
 public class ReqRespDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
