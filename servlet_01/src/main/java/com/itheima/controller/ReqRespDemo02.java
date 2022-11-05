@@ -56,7 +56,7 @@ public class ReqRespDemo02 extends HttpServlet {
             String key = item.getKey();
             System.out.print("key::"+key);
             String[] value = item.getValue();
-            System.out.println("||value::"+value);
+            System.out.println("||value::"+Arrays.toString(value));
         });
 
 
