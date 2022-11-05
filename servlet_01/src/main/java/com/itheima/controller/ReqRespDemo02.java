@@ -4,6 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 
 @WebServlet("/reqrespdemo02")
@@ -12,7 +13,6 @@ public class ReqRespDemo02 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("get...");
-        request.setCharacterEncoding("utf-8");
 //
 //        String method = request.getMethod();
 //
@@ -47,8 +47,6 @@ public class ReqRespDemo02 extends HttpServlet {
 //
 //        System.out.println("header::"+header);
 
-        String s = request.getReader().readLine();
-        System.out.println("s::"+s);
 
 
     }
@@ -91,7 +89,8 @@ public class ReqRespDemo02 extends HttpServlet {
 //        System.out.println("header>>"+header);
 
         String s = request.getReader().readLine();
-        System.out.println("s>>"+s);
+        String s1 = new String(s.getBytes(),StandardCharsets.UTF_8);
+        System.out.println("s>>"+s1);
 
     }
 }
