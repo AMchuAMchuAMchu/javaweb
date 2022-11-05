@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 
-@WebServlet("/reqrespdemo02")
+@WebServlet("servlet_01/reqrespdemo02")
 public class ReqRespDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
