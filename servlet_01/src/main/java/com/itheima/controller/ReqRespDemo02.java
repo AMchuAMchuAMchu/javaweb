@@ -100,7 +100,14 @@ public class ReqRespDemo02 extends HttpServlet {
 //
 //        System.out.println("header>>"+header);
 
-        String s = request.getReader().readLine();
-        System.out.println("s1>>"+s);
+        Map<String, String[]> parameterMap = request.getParameterMap();
+
+        parameterMap.entrySet().forEach((item)->{
+            String key = item.getKey();
+            String[] value = item.getValue();
+            System.out.print("key::"+key);
+            System.out.println("value::"+Arrays.toString(value));
+        });
+
     }
 }
