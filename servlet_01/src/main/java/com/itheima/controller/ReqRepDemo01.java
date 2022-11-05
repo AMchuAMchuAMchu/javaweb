@@ -24,7 +24,7 @@ public class ReqRepDemo01 extends HttpServlet {
         System.out.println("doGet...");
         String anime = req.getParameter("anime");
         resp.setHeader("content-type","text/html;charset=utf-8");
-        resp.getWriter().write("<h1>"+anime+"电视台即将开播!! </h1>");
+        resp.getWriter().write("<h1>"+anime+":电视台即将开播!! </h1>");
     }
 
     @Override
