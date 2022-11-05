@@ -3,8 +3,10 @@ package com.itheima.controller;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import javax.sound.midi.Soundbank;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Map;
 
@@ -50,7 +52,12 @@ public class ReqRespDemo02 extends HttpServlet {
 
         Map<String, String[]> parameterMap = request.getParameterMap();
 
-        parameterMap.entrySet().forEach(System.out::println);
+        parameterMap.entrySet().forEach((item)->{
+            String key = item.getKey();
+            System.out.print("key::"+key);
+            String[] value = item.getValue();
+            System.out.println("||value::"+value);
+        });
 
 
     }
