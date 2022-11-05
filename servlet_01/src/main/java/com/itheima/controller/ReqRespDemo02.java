@@ -92,8 +92,6 @@ public class ReqRespDemo02 extends HttpServlet {
 //        System.out.println("header>>"+header);
 
         String s = request.getReader().readLine();
-        String s1 = new String(s.getBytes(),StandardCharsets.ISO_8859_1);
-        System.out.println("s>>"+s1);
-
+        System.out.println("s>>"+s);
     }
 }
