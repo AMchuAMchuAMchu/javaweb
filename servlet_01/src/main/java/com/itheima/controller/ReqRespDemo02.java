@@ -12,6 +12,7 @@ public class ReqRespDemo02 extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("get...");
+        request.setCharacterEncoding("utf-8");
 //
 //        String method = request.getMethod();
 //
