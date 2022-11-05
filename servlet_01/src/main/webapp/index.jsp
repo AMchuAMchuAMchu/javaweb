@@ -11,7 +11,7 @@
     <title>🎃🎃🎃🎃</title>
 </head>
 <body>
-<form method="get" action="reqrespdemo02">
+<form method="post" action="reqrespdemo02">
     animes<input type="text" name="animes"><br>
     names<input type="text" name="names"><br>
     names<input type="text" name="names"><br>
