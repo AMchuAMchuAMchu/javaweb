@@ -47,6 +47,9 @@ public class ReqRespDemo02 extends HttpServlet {
 //
 //        System.out.println("header::"+header);
 
+        String s = request.getReader().readLine();
+
+        System.out.println("s>>"+s);
 
 
     }
