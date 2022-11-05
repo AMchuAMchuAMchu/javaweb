@@ -6,6 +6,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
+import java.util.Map;
 
 @WebServlet("/reqrespdemo02")
 public class ReqRespDemo02 extends HttpServlet {
@@ -47,9 +48,9 @@ public class ReqRespDemo02 extends HttpServlet {
 //
 //        System.out.println("header::"+header);
 
-        String s = request.getReader().readLine();
+        Map<String, String[]> parameterMap = request.getParameterMap();
 
-        System.out.println("s>>"+s);
+        parameterMap.entrySet().forEach(System.out::println);
 
 
     }
