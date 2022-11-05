@@ -85,9 +85,12 @@ public class ReqRespDemo02 extends HttpServlet {
 //            System.out.println(i+1+">>"+names[i]);
 //        }
 
-        String header = request.getHeader("user-agent");
+//        String header = request.getHeader("user-agent");
+//
+//        System.out.println("header>>"+header);
 
-        System.out.println("header>>"+header);
+        String s = request.getReader().readLine();
+        System.out.println("s>>"+s);
 
     }
 }
