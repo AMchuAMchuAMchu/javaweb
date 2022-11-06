@@ -22,6 +22,7 @@ public class Redirect01 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
         System.out.println("redirect01");
+        req.setAttribute("name","刀剑神域 10 anniversary");
         req.getRequestDispatcher("/redirect02").forward(req,resp);
     }
 
