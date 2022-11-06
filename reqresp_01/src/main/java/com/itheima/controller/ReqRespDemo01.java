@@ -6,37 +6,30 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.lang.annotation.Repeatable;
 
 /**
  * Description ==> TODO
  * BelongsProject ==> javaweb
  * BelongsPackage ==> com.itheima.controller
  * Version ==> 1.0
- * CreateTime ==> 2022-11-05 09:02:53
+ * CreateTime ==> 2022-11-07 07:01:11
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@WebServlet("/reqrepdemo01")
-public class ReqRepDemo01 extends HttpServlet {
+@WebServlet("/reqrespdemo01")
+public class ReqRespDemo01 extends HttpServlet {
 
-    /*
-    * Description ==> TODO
-    * Return Type ==> void
-    * Params args ==> [javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse]
-    * Create Time ==> 2022/11/6 9:51
-    * author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_start
-    */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
-        System.out.println("req>>"+req);
-        String anime = req.getParameter("anime");
-        resp.setHeader("content-type","text/html;charset=utf-8");
-        resp.getWriter().write("<h1>"+anime+":电视台即将开播!! </h1>");
+        String name = req.getParameter("name");
+        System.out.println("name::"+name);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
         System.out.println("doPost...");
+        String name = req.getParameter("name");
+        System.out.println("name::"+name);
     }
 }

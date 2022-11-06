@@ -62,6 +62,13 @@ public class ReqRespDemo02 extends HttpServlet {
 
     }
 
+    /*
+    * Description ==> TODO
+    * Return Type ==> void
+    * Params args ==> [javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse]
+    * Create Time ==> 2022/11/6 9:51
+    * author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_start
+    */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("post...");
