@@ -27,6 +27,8 @@ public class ReqRespDemo01 extends HttpServlet {
         System.out.println("header::"+header);
         String accept = req.getHeader("accept");
         System.out.println("accept::"+accept);
+        String host = req.getHeader("host");
+        System.out.println("host::"+host);
     }
 
     @Override
