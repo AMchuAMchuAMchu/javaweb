@@ -25,6 +25,8 @@ public class ReqRespDemo01 extends HttpServlet {
         System.out.println("name::"+name);
         String header = req.getHeader("user-agent");
         System.out.println("header::"+header);
+        String accept = req.getHeader("accept");
+        System.out.println("accept::"+accept);
     }
 
     @Override
