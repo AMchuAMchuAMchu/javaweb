@@ -1,6 +1,7 @@
 package com.itheima.controller;
 
 import com.itheima.config.CFSpringConfig;
+import com.itheima.pojo.User;
 import com.itheima.service.IUserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -38,11 +39,11 @@ public class LoginDemo01 extends HttpServlet {
 
         IUserService userService = ac.getBean(IUserService.class);
 
-        boolean b = userService.selectByUsername(username);
+        User b = userService.selectByUsername(username);
 
         resp.setContentType("text/html;charset=utf-8");
 
-        resp.getWriter().write("<h1>查询结果"+(b?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
+        resp.getWriter().write("<h1>查询结果"+(b==null?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
 
     }
 }

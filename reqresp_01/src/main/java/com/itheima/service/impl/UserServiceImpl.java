@@ -21,18 +21,18 @@ public class UserServiceImpl implements IUserService {
     private UserDao userDao;
 
     @Override
-    public boolean selectByUsername(String username) {
+    public User selectByUsername(String username) {
         System.out.println("selectByUsername...");
-        Integer b = userDao.selectByUsername(username);
-        return b>0;
+        User b = userDao.selectByUsername(username);
+        return b;
     }
 
     @Override
     public boolean insertUser(String username, String password) {
         System.out.println("insertUser...");
         Integer integer = 0;
-        Integer user = userDao.selectByUsername(username);
-        if (user == 0) {
+        User user = userDao.selectByUsername(username);
+        if (user == null) {
             integer = userDao.insertUser(username, password);
             return integer>0;
         }

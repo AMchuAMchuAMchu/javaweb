@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public interface IUserService {
 
-    boolean selectByUsername(String username);
+    User selectByUsername(String username);
 
     boolean insertUser(String username,String password);
 
