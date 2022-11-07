@@ -24,7 +24,7 @@ public class Redirect01 extends HttpServlet {
         System.out.println("redirect01");
 //        resp.setCharacterEncoding("utf-8");
         resp.setStatus(200);
-        resp.setContentType("content-type:text/html;charset=utf-8");
+        resp.setContentType("text/html;charset=utf-8");
 //        req.setAttribute("name","刀剑神域 10 anniversary");
 //        req.getRequestDispatcher("/redirect02").forward(req,resp);
         resp.getWriter().write("欢迎来到刀剑的殿堂....");
