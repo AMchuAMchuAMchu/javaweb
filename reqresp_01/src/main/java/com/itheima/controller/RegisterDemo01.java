@@ -25,8 +25,6 @@ import java.io.IOException;
 @WebServlet("/register01")
 public class RegisterDemo01 extends HttpServlet {
 
-    @Autowired
-    private UserServiceImpl userService;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,6 +34,8 @@ public class RegisterDemo01 extends HttpServlet {
         String username = req.getParameter("username");
 
         String password = req.getParameter("password");
+
+        UserServiceImpl userService = new UserServiceImpl();
 
         boolean b = userService.insertUser(username, password);
 
