@@ -1,6 +1,6 @@
 package com.itheima.config;
 
-import com.itheima.controller.LoginDemo01;
+import com.itheima.controller.RegisterDemo01;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -19,7 +19,7 @@ import java.beans.Transient;
  */
 @Configuration
 @ComponentScan("com.itheima.service")
-@Import({CFDruidDataSource.class,CFMybatisConfig.class, LoginDemo01.class})
+@Import({CFDruidDataSource.class,CFMybatisConfig.class, RegisterDemo01.class})
 @PropertySource("classpath:jdbc.properties")
 @Transactional
 public class CFSpringConfig {
