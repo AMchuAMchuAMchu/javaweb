@@ -24,7 +24,7 @@ public class RespPicturesDemo01 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
         ServletOutputStream os = resp.getOutputStream();
-        FileInputStream fis = new FileInputStream("d:\\ke.jpg");
+        FileInputStream fis = new FileInputStream("d://ke.jpg");
         byte[] bytes = new byte[1024];
         int len = 0;
         while ((len = fis.read(bytes))!=-1){
