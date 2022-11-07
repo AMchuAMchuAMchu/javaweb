@@ -31,7 +31,7 @@ public class Redirect01 extends HttpServlet {
         resp.setStatus(302);
         String contextPath = req.getContextPath();
 //        resp.setHeader("Location",contextPath+"/redirect02");
-        resp.setHeader("Location","baidu.com");
+        resp.setHeader("Location","/baidu.com");
     }
 
     @Override
