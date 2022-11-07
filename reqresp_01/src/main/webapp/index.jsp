@@ -11,6 +11,10 @@
     <title>🍏🍏🏹🏹🏹</title>
 </head>
 <body>
-<form method="get" action=""
+<form method="post" action="redirect01">
+    用户名:<input type="text" name="username"><br>
+    密  码:<input type="text" name="password"><br>
+    提交<input type="submit"><br>
+</form>
 </body>
 </html>
