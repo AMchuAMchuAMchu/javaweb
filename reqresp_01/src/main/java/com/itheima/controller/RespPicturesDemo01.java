@@ -23,7 +23,6 @@ public class RespPicturesDemo01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
-        resp.setContentType("text/html;charset=utf-8");
         ServletOutputStream os = resp.getOutputStream();
         FileInputStream fis = new FileInputStream("d:\\ke.jpg");
         byte[] bytes = new byte[1024];
