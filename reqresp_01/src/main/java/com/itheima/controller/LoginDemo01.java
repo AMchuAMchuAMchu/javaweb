@@ -40,12 +40,9 @@ public class LoginDemo01 extends HttpServlet {
 
         boolean b = userService.selectByUsername(username);
 
-        System.out.println("插入结果::"+b);
-
         resp.setContentType("text/html;charset=utf-8");
 
-        resp.getWriter().write("<h1>插入结果"+(b?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
-
+        resp.getWriter().write("<h1>查询结果"+(b?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
 
     }
 }

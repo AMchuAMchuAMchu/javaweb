@@ -32,7 +32,7 @@ public class UserServiceImpl implements IUserService {
         System.out.println("insertUser...");
         Integer integer = 0;
         Integer user = userDao.selectByUsername(username);
-        if (user > 0) {
+        if (user == 0) {
             integer = userDao.insertUser(username, password);
             return integer>0;
         }
