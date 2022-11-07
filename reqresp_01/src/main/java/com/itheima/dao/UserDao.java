@@ -16,7 +16,7 @@ import org.apache.ibatis.annotations.Select;
 public interface UserDao{
 
     @Select("select * from user where username = #{username}")
-    User selectByUsername(@Param("username") String username);
+    Integer selectByUsername(@Param("username") String username);
 
     @Insert("insert into user values(#{username},#{password}) ")
     Integer insertUser(@Param("username") String username,@Param("password") String password);
