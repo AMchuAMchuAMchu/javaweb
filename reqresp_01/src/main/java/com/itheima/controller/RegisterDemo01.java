@@ -26,7 +26,7 @@ import java.io.IOException;
 public class RegisterDemo01 extends HttpServlet {
 
     @Autowired
-    private IUserService userService;
+    private UserServiceImpl userService;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
