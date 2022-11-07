@@ -28,7 +28,7 @@ public class RespPicturesDemo01 extends HttpServlet {
         byte[] bytes = new byte[1024];
         int len = 0;
         while ((len = fis.read(bytes))!=-1){
-            os.write(bytes,0,-1);
+            os.write(bytes,0,len);
         }
 
         fis.close();
