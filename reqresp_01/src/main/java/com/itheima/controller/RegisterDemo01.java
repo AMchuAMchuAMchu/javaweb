@@ -23,7 +23,6 @@ import java.io.IOException;
  * CreateTime ==> 2022-11-07 08:48:29
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@Component
 @WebServlet("/register01")
 public class RegisterDemo01 extends HttpServlet {
 
@@ -39,7 +38,7 @@ public class RegisterDemo01 extends HttpServlet {
 
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(CFSpringConfig.class);
 
-        UserServiceImpl userService = ac.getBean(UserServiceImpl.class);
+        IUserService userService = ac.getBean(IUserService.class);
 
         boolean b = userService.insertUser(username, password);
 
