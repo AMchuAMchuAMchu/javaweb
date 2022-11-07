@@ -1,5 +1,7 @@
 package com.itheima.controller;
 
+import org.apache.commons.io.IOUtils;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.annotation.WebServlet;
@@ -25,11 +27,13 @@ public class RespPicturesDemo01 extends HttpServlet {
         System.out.println("doGet...");
         ServletOutputStream os = resp.getOutputStream();
         FileInputStream fis = new FileInputStream("d://ke.jpg");
-        byte[] bytes = new byte[1024];
-        int len = 0;
-        while ((len = fis.read(bytes))!=-1){
-            os.write(bytes,0,len);
-        }
+//        byte[] bytes = new byte[1024];
+//        int len = 0;
+//        while ((len = fis.read(bytes))!=-1){
+//            os.write(bytes,0,len);
+//        }
+
+        IOUtils.copy(fis,os);
 
         fis.close();
         System.out.println("图片已经成功的写出的说...");
