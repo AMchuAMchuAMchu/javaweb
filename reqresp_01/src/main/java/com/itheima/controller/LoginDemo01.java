@@ -43,7 +43,7 @@ public class LoginDemo01 extends HttpServlet {
 
         resp.setContentType("text/html;charset=utf-8");
 
-        resp.getWriter().write("<h1>查询结果"+(b==null?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
+        resp.getWriter().write("<h1>查询结果"+(b!=null?"🤣🤣成功!!":"😭😭失败...")+"</h1>");
 
     }
 }
