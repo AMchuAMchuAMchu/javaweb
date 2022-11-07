@@ -4,6 +4,7 @@ import com.itheima.config.CFSpringConfig;
 import com.itheima.service.IUserService;
 import com.itheima.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.PayloadApplicationEvent;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
@@ -35,6 +36,8 @@ public class RegisterDemo01 extends HttpServlet {
         String username = req.getParameter("username");
 
         String password = req.getParameter("password");
+
+        System.out.println("username::"+username+ "|| password:"+password);
 
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(CFSpringConfig.class);
 
