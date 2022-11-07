@@ -30,11 +30,13 @@ public class UserServiceImpl implements IUserService {
     @Override
     public boolean insertUser(String username, String password) {
         System.out.println("insertUser...");
+        Integer integer = 0;
         User user = userDao.selectByUsername(username);
-        if (user != null) {
-            Integer integer = userDao.insertUser(username, password);
-            return integer > 0;
+        if (user == null) {
+            integer = userDao.insertUser(username, password);
+            return integer>0;
         }
+        return false;
 
     }
 }
