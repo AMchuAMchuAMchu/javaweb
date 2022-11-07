@@ -5,6 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.beans.Transient;
@@ -18,6 +19,7 @@ import java.beans.Transient;
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
 @Configuration
+@ComponentScan("com.itheima.service")
 @Import({CFDruidDataSource.class,CFMybatisConfig.class})
 @PropertySource("classpath:jdbc.properties")
 @Transactional
