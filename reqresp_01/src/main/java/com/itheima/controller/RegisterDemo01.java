@@ -19,7 +19,7 @@ import java.io.IOException;
  * CreateTime ==> 2022-11-07 08:48:29
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@WebServlet("/login01")
+@WebServlet("/register01")
 public class RegisterDemo01 extends HttpServlet {
 
     @Autowired
