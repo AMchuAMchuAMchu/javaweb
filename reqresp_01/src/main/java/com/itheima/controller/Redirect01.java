@@ -28,9 +28,9 @@ public class Redirect01 extends HttpServlet {
 //        req.setAttribute("name","刀剑神域 10 anniversary");
 //        req.getRequestDispatcher("/redirect02").forward(req,resp);
         resp.getWriter().write("<h1>欢迎来到刀剑的殿堂....</h1>");
-        resp.setStatus(302);
-        String contextPath = req.getContextPath();
-        resp.setHeader("Location",contextPath+"/redirect02");
+//        resp.setStatus(302);
+//        String contextPath = req.getContextPath();
+//        resp.setHeader("Location",contextPath+"/redirect02");
 //        resp.setHeader("Location","/baidu.com");
 //        resp.sendRedirect("http://www.baidu.com");
     }
