@@ -20,22 +20,22 @@ import javax.sql.DataSource;
 public class CFDruidDataSource {
 
     @Value("${jdbc.driverClassName}")
-    private String driverClassName;
+    private String pdriverClassName;
     @Value("${jdbc.url}")
-    private String url;
+    private String purl;
     @Value("${jdbc.username}")
-    private String username;
+    private String pusername;
     @Value("${jdbc.password}")
-    private String password;
+    private String ppassword;
 
     @Bean
     public DataSource getDruidDataSource(){
 
         DruidDataSource druidDataSource = new DruidDataSource();
-        druidDataSource.setDriverClassName(driverClassName);
-        druidDataSource.setUrl(url);
-        druidDataSource.setUsername(username);
-        druidDataSource.setPassword(password);
+        druidDataSource.setDriverClassName(pdriverClassName);
+        druidDataSource.setUrl(purl);
+        druidDataSource.setUsername(pusername);
+        druidDataSource.setPassword(ppassword);
         return druidDataSource;
 
     }
