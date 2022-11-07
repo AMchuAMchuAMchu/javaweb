@@ -20,6 +20,7 @@ public class CFMybatisConfig {
     public SqlSessionFactoryBean getSSFB(DataSource dataSource){
         SqlSessionFactoryBean ssfb = new SqlSessionFactoryBean();
         ssfb.setDataSource(dataSource);
+        ssfb.setTypeAliasesPackage("com.itheima.pojo");
         return ssfb;
     }
 
