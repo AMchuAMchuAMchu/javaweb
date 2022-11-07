@@ -30,9 +30,9 @@ public class Redirect01 extends HttpServlet {
         resp.getWriter().write("<h1>欢迎来到刀剑的殿堂....</h1>");
         resp.setStatus(302);
         String contextPath = req.getContextPath();
-//        resp.setHeader("Location",contextPath+"/redirect02");
+        resp.setHeader("Location",contextPath+"/redirect02");
 //        resp.setHeader("Location","/baidu.com");
-        resp.sendRedirect("http://www.baidu.com");
+//        resp.sendRedirect("http://www.baidu.com");
     }
 
     @Override
