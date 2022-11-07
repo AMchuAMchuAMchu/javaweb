@@ -3,6 +3,8 @@ package com.itheima.controller;
 import com.itheima.service.IUserService;
 import com.itheima.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,6 +21,7 @@ import java.io.IOException;
  * CreateTime ==> 2022-11-07 08:48:29
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
+@Component
 @WebServlet("/register01")
 public class RegisterDemo01 extends HttpServlet {
 
