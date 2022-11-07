@@ -19,7 +19,7 @@ import javax.sql.DataSource;
  */
 public class CFDruidDataSource {
 
-    @Value("${jdbc.username}")
+    @Value("${jdbc.driverClassName}")
     private String driverClassName;
     @Value("${jdbc.url}")
     private String url;
