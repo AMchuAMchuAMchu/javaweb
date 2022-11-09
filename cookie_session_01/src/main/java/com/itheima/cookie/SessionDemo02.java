@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -20,7 +21,8 @@ public class SessionDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
-        Object name02 = req.getAttribute("name02");
+        HttpSession session = req.getSession();
+        Object name02 = session.getAttribute("name02");
         System.out.println("name02:"+name02);
     }
 }
