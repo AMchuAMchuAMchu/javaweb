@@ -26,6 +26,7 @@ public class CookieDemo02 extends HttpServlet {
 
         Cookie[] cookies = req.getCookies();
 
+
         for (Cookie cookie : cookies) {
             if ("name".equals(cookie.getName())){
                 System.out.println(cookie.getName()+"::"+cookie.getValue());

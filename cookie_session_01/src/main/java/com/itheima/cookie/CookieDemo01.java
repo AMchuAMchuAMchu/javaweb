@@ -26,6 +26,8 @@ public class CookieDemo01 extends HttpServlet {
 
         Cookie cookie = new Cookie("name", "guilty_crown");
 
+        cookie.setMaxAge(60*5);
+
         resp.addCookie(cookie);
 
     }
