@@ -24,7 +24,7 @@ public class CookieDemo01 extends HttpServlet {
 
         System.out.println("doGet...");
 
-        Cookie cookie = new Cookie("name", "guilty crown");
+        Cookie cookie = new Cookie("name", "guilty_crown");
 
         resp.addCookie(cookie);
 
