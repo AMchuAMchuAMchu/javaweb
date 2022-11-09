@@ -22,6 +22,7 @@ public class SessionDemo02 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doGet...");
         HttpSession session = req.getSession();
+        System.out.println("session"+session);
         Object name02 = session.getAttribute("name02");
         System.out.println("name02:"+name02);
     }

@@ -23,6 +23,7 @@ public class SessionDemo01 extends HttpServlet {
         System.out.println("doGet...");
 
         HttpSession session = req.getSession();
+        System.out.println("session"+session);
 
         session.setAttribute("name02","为美好世界献上祝福");
 
