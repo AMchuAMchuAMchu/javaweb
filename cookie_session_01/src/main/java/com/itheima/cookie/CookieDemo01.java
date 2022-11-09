@@ -24,7 +24,8 @@ public class CookieDemo01 extends HttpServlet {
 
         System.out.println("doGet...");
 
-        Cookie cookie = new Cookie("name", "guilty_crown");
+//        Cookie cookie = new Cookie("name", "guilty_crown");
+        Cookie cookie = new Cookie("name", "罪恶王冠");
 
         cookie.setMaxAge(60*5);
 
