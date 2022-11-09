@@ -25,5 +25,6 @@ public class SessionDemo02 extends HttpServlet {
         System.out.println("session"+session);
         Object name02 = session.getAttribute("name02");
         System.out.println("name02:"+name02);
+        session.invalidate();
     }
 }
