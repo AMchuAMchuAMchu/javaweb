@@ -3,6 +3,7 @@ package com.itheima.controller;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebListener;
 
 /**
  * Description ==> TODO
@@ -12,7 +13,7 @@ import javax.servlet.annotation.WebFilter;
  * CreateTime ==> 2022-11-10 14:58:23
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@WebFilter
+@WebListener
 public class ServletContextListenerDemo01 implements ServletContextListener {
 
     @Override
