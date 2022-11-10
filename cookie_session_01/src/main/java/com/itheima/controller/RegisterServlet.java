@@ -61,6 +61,10 @@ public class RegisterServlet extends HttpServlet {
             sqlSession.commit();
             // 释放资源
             sqlSession.close();
+
+            resp.setContentType("text/html;charset=utf-8");
+            resp.getWriter().write("注册成功!!");
+
         }else {
             // 用户名存在，给出提示信息
             resp.setContentType("text/html;charset=utf-8");
