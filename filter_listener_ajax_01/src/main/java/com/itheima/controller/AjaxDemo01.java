@@ -25,9 +25,8 @@ public class AjaxDemo01 extends HttpServlet {
 
         System.out.println("doGet...");
 
-        HttpSession session = req.getSession();
+        resp.getWriter().write("在地下城寻求邂逅是否搞错了什么...");
 
-        session.setAttribute("name01","在地下城寻求邂逅是否搞错了什么...");
 
 
 
