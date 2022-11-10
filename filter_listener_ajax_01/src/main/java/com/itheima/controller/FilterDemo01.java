@@ -29,8 +29,12 @@ public class FilterDemo01 implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         System.out.println("doFilter...");
+        System.out.println("before doFilter...");
 
-//        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest,servletResponse);
+
+        System.out.println("after doFilter...");
+
 
     }
 
