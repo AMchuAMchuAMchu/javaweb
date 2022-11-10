@@ -21,7 +21,7 @@
     xhttp.send();
 
     //3. 获取响应
-    xhttp.onreadystatechange = function () {
+    xhttp.onreadystatechange =  () => {
         if (this.readyState == 4 && this.status == 200) {
             alert(this.responseText);
         }
