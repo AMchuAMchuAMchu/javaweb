@@ -15,15 +15,14 @@ import java.io.IOException;
 @WebFilter("/*")
 public class FilterDemo01 implements Filter {
 
-
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        Filter.super.init(filterConfig);
+//        Filter.super.init(filterConfig);
     }
 
     @Override
     public void destroy() {
-        Filter.super.destroy();
+//        Filter.super.destroy();
     }
 
     @Override
@@ -34,6 +33,8 @@ public class FilterDemo01 implements Filter {
         filterChain.doFilter(servletRequest,servletResponse);
 
     }
+
+
 
 
 }
