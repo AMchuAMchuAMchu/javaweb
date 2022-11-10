@@ -30,7 +30,7 @@ public class FilterDemo01 implements Filter {
 
         System.out.println("doFilter...");
 
-        filterChain.doFilter(servletRequest,servletResponse);
+//        filterChain.doFilter(servletRequest,servletResponse);
 
     }
 
