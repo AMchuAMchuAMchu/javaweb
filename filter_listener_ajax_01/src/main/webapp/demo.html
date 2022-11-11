@@ -27,13 +27,17 @@
     //     }
     //
     // }
+    window.onload = function () {
 
-    axios({
-        method:'get',
-        url:'http://localhost:8080/filter_listener_ajax_01/ajaxdemo01?name=kiritoasuna',
-    }).then(function (resp){
-        alert(resp.data)
-    })
+        axios({
+            method: 'get',
+            url: 'http://localhost:8080/filter_listener_ajax_01/ajaxdemo01?name=kiritoasuna',
+        }).then(function (resp) {
+            alert(resp.data)
+        })
+
+    }
+
 
 </script>
 </body>
