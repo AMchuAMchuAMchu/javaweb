@@ -14,8 +14,9 @@
          url:"http://localhost:8080/filter_listener_ajax_01/ajaxdemo01?name=kiritoasuna"
      }).then(function (resp) {
          alert(resp.data);
-         const name01 = JSON.parse(resp.data)
-         console.log('对象::',name01)
+         var anime = '{"name":"在地下城寻求邂逅是否搞错了什么"}'
+         var name01 = JSON.parse(anime)
+         console.log('对象::',name01.name)
          const name02 = JSON.stringify(name01)
          console.log('字符串::',name02)
      })
