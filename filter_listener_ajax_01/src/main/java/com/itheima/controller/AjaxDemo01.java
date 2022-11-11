@@ -31,7 +31,7 @@ public class AjaxDemo01 extends HttpServlet {
 
         resp.setContentType("text/html;charset=utf-8");
 
-        resp.getWriter().write("在地下城寻求邂逅是否搞错了什么...");
+        resp.getWriter().write("{'name':'在地下城寻求邂逅是否搞错了什么...'}");
 
 
 
