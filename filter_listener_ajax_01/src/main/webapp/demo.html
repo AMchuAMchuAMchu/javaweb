@@ -2,43 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🧐🎃🎃😮😮😮😭😭😭😭🏹🏹</title>
+    <title>Title</title>
 </head>
 <body>
 
-<h1>扣你吃哇!hello,bye bye🎃🎃</h1>
-
 <script src="js/axios.js"></script>
 <script>
-
-    // var xhttp;
-    // if (window.XMLHttpRequest) {
-    //     xhttp = new XMLHttpRequest();
-    // } else {
-    //     // code for IE6, IE5
-    //     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    // }
-    // //2. 发送请求
-    // xhttp.open("GET", "http://localhost:8080/filter_listener_ajax_01/ajaxdemo01");
-    // xhttp.send();
-    //
-    // //3. 获取响应
-    // xhttp.onreadystatechange = function () {
-    //     if (this.readyState == 4 && this.status == 200) {
-    //         alert(this.responseText);
-    //     }
-    //
-    // }
-    window.onload = function () {
-
-        axios({
-            method: 'get',
-            url: 'http://localhost:8080/filter_listener_ajax_01/ajaxdemo01?name=kiritoasuna',
-        }).then(function (resp) {
-            alert(resp.data)
-        })
-
-    }
+    //1. get
+     axios({
+         method:"get",
+         url:"http://localhost:8080/filter_listener_ajax_01/ajaxdemo01?name=kiritoasuna"
+     }).then(function (resp) {
+         alert(resp.data);
+     })
 
 
 </script>
