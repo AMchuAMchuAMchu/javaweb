@@ -25,6 +25,10 @@ public class AjaxDemo01 extends HttpServlet {
 
         System.out.println("doGet...");
 
+        String name = req.getParameter("name");
+
+        System.out.println("name::>>"+name);
+
         resp.setContentType("text/html;charset=utf-8");
 
         resp.getWriter().write("在地下城寻求邂逅是否搞错了什么...");
