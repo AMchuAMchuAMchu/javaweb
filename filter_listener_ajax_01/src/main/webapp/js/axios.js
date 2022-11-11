@@ -528,7 +528,7 @@
   /* Checking if the kindOfTest function returns true when passed an HTMLFormElement. */
   var isHTMLForm = kindOfTest('HTMLFormElement');
   var toCamelCase = function toCamelCase(str) {
-    return str.toLowerCase().replace(/[_-\s]([a-z\d])(\w*)/g, function replacer(m, p1, p2) {
+    return str.toLowerCase().replace(/[_\s]([a-z\d])(\w*)/g, function replacer(m, p1, p2) {
       return p1.toUpperCase() + p2;
     });
   };
